@@ -1,0 +1,75 @@
+.contenedor {
+  max-width: 100%;
+}
+#stripe {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  grid-gap: 10px;
+  height: 100%;
+  background-color: white;
+  border-radius: 4px;
+}
+#h1 {
+  text-align: center; 
+  color: white; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+  
+.square {
+  float: left;
+  width: 30%;
+  height: 0;
+  padding-bottom: 30%;
+  background-color: white;
+  margin: 1.66%;
+  border-radius: 15pt;
+  transition-duration: 0.6s;
+}
+  
+.container {
+  max-width: 600px;
+  margin: 0 auto
+}
+.selected {
+  background-color: tomato;
+}
+  
+button, #message{
+  background-color: inherit;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  height: 100%;
+  outline: none;
+  border: none;
+  transition: all 0.4s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  font-size: large;
+
+}
+button:hover{
+  color: white;
+  background: yellowgreen
+}
+@media (max-width: 1050px) {
+  #stripe {
+    height: 100%
+  }
+}
+@media (max-width: 440px) {
+  #stripe {
+    grid-gap: 0px;
+  }
+}
+@media (max-width: 355px) {
+  #h1 {
+    font-size: 1.5rem;
+  }
+  button, #message {
+    font-size: xx-small;
+    letter-spacing: 0px;
+}
+}
